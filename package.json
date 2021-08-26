@@ -1,0 +1,16 @@
+{
+  "name": "credential-pdf-creator",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "dev": "node src/controllers/CrawlerController.js"
+  },
+  "repository": "git@github.com:prynssmaia/credential-pdf-creator.git",
+  "author": "prynssmaia <prynss_lp@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
