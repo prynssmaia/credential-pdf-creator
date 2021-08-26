@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credentials PDF Creator</title>
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
 </head>
 <body>
     <conteiner class="main">
-        <conteiner class="header">
-            <header class="header-content"></header>
-            <header class="bottom-header-content"></header>
-            <header class="bottom-header-line"></header>
-        </conteiner>
+        <header class="header">
+            <header class="top-header"></header>
+            <header class="botton-header"></header>
+        </header>
         <section>
-            <div class="cards">
-                <a href="#">
-                    <div id="card">
-                        <div class="card-circle">
-                            <div class="card-img">
-                                <img src="#" alt="#">
-                            </div>
-                        </div>
-                        <h4 class="card-title">Enviar</h4>
+            <div class="title-content">
+                <h3>Credenciais de Acesso</h3>                
+            </div>
+            <div class="input-group">
+                <form action="">
+                    <div class="input-conteiner">
+                        <label for="county" class="county-name">Município</label>
+                        <input type="text" class="field" id="county">
                     </div>
-                </a>
+
+                    <div class="input-conteiner">
+                        <label for="data" class="data-field">Dados</label>
+                        <input type="text" class="field" id="data">
+                    </div>
+                </form>
+                    
+            </div>
+            <div class="button">
+                <button class="btn-primary">Baixar PDF</button>
             </div>
         </section>
     </conteiner>

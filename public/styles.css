@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+section {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+    border-bottom: 0.125rem solid #52D0A1;
+}
+
+h2, h3, button, input, option, select, label {
+	font-family: 'Open Sans', sans-serif;
+}
+
+label, ::placeholder {
+	font-size: 13px;
+}
+
+:root {
+    --white: #fff;
+    --background: #f2f4f5;
+    --background-white: #F2F2F2;
+    --wave-blue: #1890ff;
+    --dark-blue: #004191;
+    --darkest-blue: #002766;
+    --light-green: #52D0A1;
+	--medium-green: #268568;
+    --dark-green: #00802F;
+    --darkest-green: #016b28;
+	--light-gray: #bfbfbf;
+}
+
+/* header content ====================================== */
+header {
+    width: 100%;
+}
+
+.top-header {
+    background-color: var(--darkest-blue);
+    height: 2.5rem;
+}
+
+.botton-header {
+    background-color: var(--dark-blue);
+    height: 1.875rem;
+}
+/* header content ====================================== */
+
+/* title content ======================================= */
+.title-content {
+	display: flex;
+	justify-content: center;
+    margin-top: 0.938rem;
+}
+
+.title-content h3 {
+    color:var(--darkest-blue);
+}
+/* title content ======================================= */
+
+
+/* Input content ========================================*/
+
+.input-group {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+}
+
+.input-conteiner {
+	margin-top: 0.938rem;
+}
+
+.input-group label {
+	display: block;
+	padding-left: 0.813rem;
+    color: #222222;	
+}
+
+.field {
+    width: 100%;
+    border: 1px solid var(--light-gray);
+	border-radius: 2px;
+	padding: 0.75rem;
+  	margin: 8px 0;
+}
+
+.field:focus,
+.field:hover {
+	outline: none;
+	border: 1px solid var(--dark-blue);
+	box-shadow: 0 0 1px var(--dark-blue);	
+}
+
+/* Input content ========================================*/
+
+/* button content =======================================*/
+.button {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 0.938rem;
+}
+
+.btn-primary {    
+	width: 100%;
+	padding: 0.625rem;
+	margin-bottom: 1.25rem;
+	color: #FFF;
+	border: 1px solid var(--darkest-green);
+	background: #00802F;
+	border-radius: 2px;
+	text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+	background: var(--darkest-green);
+	transition: background-color .5s ease-in;
+}
+
+/* button content =======================================*/
