@@ -23,7 +23,7 @@
                 <h3>Credenciais de Acesso</h3>                
             </div>
             <div class="input-group">
-                <form action="">
+                <form id="input-group" action="/credentials" method="POST">
                     <div class="input-conteiner">
                         <label for="county" class="county-name">Município</label>
                         <input type="text" class="field" id="county">
@@ -36,7 +36,7 @@
                 </form>
                     
             </div>
-            <div class="button">
+            <div class="button" form="input-group" type="submit">
                 <button class="btn-primary">Baixar PDF</button>
             </div>
         </section>
