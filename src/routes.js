@@ -10,7 +10,10 @@ const views = path.join(__dirname, '/views/')
 
 app.get('/', (req, res) => res.render(views + 'index', { dados }))
 app.post('/pdf', (req, res) => 
-    console.log(req)
+    dados.push({
+        county: req.body.county,
+        data: req.body.data
+    })
 )
 
 
