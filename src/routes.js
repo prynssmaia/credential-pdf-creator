@@ -10,6 +10,10 @@ const dados = []
 const views = path.join(__dirname, '/views/')
 
 app.get('/', (req, res) => res.render(views + 'index', { dados }))
+app.get('/download', (req, res) => {
+    res.type('pdf')
+    res.download('./credentials.pdf')
+})
 
 app.post('/pdf', (req, res) => { 
     infos = {
@@ -25,6 +29,7 @@ app.post('/pdf', (req, res) => {
             console.log(err)
         } else {
             CreatePDF(dados)
+            res.redirect('/download')
         }
     })
 })
