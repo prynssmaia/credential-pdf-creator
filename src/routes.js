@@ -3,18 +3,31 @@ const app = express.Router()
 const path = require('path')
 const pdf = require('html-pdf')
 const ejs = require('ejs')
+const CreatePDF = require('./controllers/pdfController')
 
 const dados = []
 
 const views = path.join(__dirname, '/views/')
 
 app.get('/', (req, res) => res.render(views + 'index', { dados }))
-app.post('/pdf', (req, res) => 
-    dados.push({
+
+app.post('/pdf', (req, res) => { 
+    infos = {
         county: req.body.county,
-        data: req.body.data
+        datas: req.body.data
+    }
+
+    dados.push(infos)
+
+
+    ejs.renderFile(path.join(__dirname, 'views', 'credentials-pdf.ejs'), { infos }, (err, dados) => {
+        if(err) {
+            console.log(err)
+        } else {
+            CreatePDF(dados)
+        }
     })
-)
+})
 
 
 module.exports = app

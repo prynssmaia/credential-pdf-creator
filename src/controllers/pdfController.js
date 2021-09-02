@@ -1,9 +1,9 @@
 const pdf = require('html-pdf')
 
-function CreatePDF(dados) {
-    pdf.create(dados,{}).toFile('./credentials.pdf'), function (err, res) {
+function CreatePDF(html) {
+    pdf.create(html,{}).toFile('./credentials.pdf'), function (err, res) {
         if(err) {
-            console.log("Temos erro")
+            console.log("ERRO")
         } else {
             console.log(res)
         }
