@@ -7,10 +7,10 @@
 
 body {
 	background-color: #FFF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
-section {
+.wrapper {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -18,12 +18,23 @@ section {
     border-bottom: 0.125rem solid #52D0A1;
 }
 
-h2, h3, button, input, option, select, label {
-	font-family: 'Open Sans', sans-serif;
+h2, h3, button, input, option, select, label, a {
+	font-family: 'Mulish', sans-serif;
 }
 
-label, ::placeholder {
-	font-size: 13px;
+p, label, ::placeholder {
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	
+}
+
+a { 
+	text-decoration: none;
+	color: var(--dark-blue);
+}
+
+a:visited {
+	color: var(--dark-blue);
 }
 
 :root {
@@ -107,16 +118,15 @@ header {
 
 /* button content =======================================*/
 .button {
-    width: 60%;
+    width: 10rem;
     margin-left: auto;
     margin-right: auto;
-	margin-top: 0.938rem;
+	padding: .5rem 0;
 }
 
 .btn-primary {    
 	width: 100%;
 	padding: 0.625rem;
-	margin-bottom: 1.25rem;
 	color: #FFF;
 	border: 1px solid var(--darkest-green);
 	background: #00802F;
@@ -131,3 +141,124 @@ header {
 }
 
 /* button content =======================================*/
+
+
+
+/* PDF STYLES ======================================= */
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid {
+    display: grid;
+    gap: .5rem;
+}
+
+.section {
+    padding: 1.5rem 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+}
+
+.main-title {
+	padding: 3rem 0 .5rem;
+}
+
+.link {
+	padding: 0 0 1.5rem 0;
+}
+
+/* PDF- LOGO STYLES ============= */
+.logo img {
+	width: 9.7rem;
+	opacity: 0.5;
+}
+/* PDF- LOGO STYLES ============= */
+
+
+/* PDF- TITLES STYLES ============= */
+.title {
+	color: var(--darkest-blue);
+	font-size: 1.125rem;
+}
+
+.subtitle {
+	color: var(--dark-blue);
+}
+
+/* PDF- TITLES STYLES ============= */
+
+/* PDF- TABLE STYLES ============= */
+table.greyGridTable {
+	width: 80%;
+	text-align: left;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.5rem;
+  }
+  table.greyGridTable td, table.greyGridTable th {
+	border: 1px solid #FFFFFF;
+	padding: 5px;
+  }
+  table.greyGridTable tbody td {
+	font-size: 14px;
+  }
+  table.greyGridTable thead {
+	background: #FFFFFF;
+	border-bottom: 2px solid #52D0A1;
+  }
+  table.greyGridTable thead th {
+	font-size: 16px;
+	font-weight: bold;
+	color: #002766;
+	text-align: left;
+  }
+
+  table.greyGridTable thead th:last-child {
+	width: 15%;
+  }
+  
+  table.greyGridTable tfoot {
+	font-weight: normal;
+	border-top: 2px solid #bfbfbf;
+  }
+/* PDF- TABLE STYLES ============= */
+
+
+/* PDF- FOOTER STYLES ============= */
+footer {
+	border-top: 0.125rem solid var(--darkest-green);
+	opacity: 0.5;
+	margin-top: 2rem;	
+}
+
+.padding {
+	padding: 9px 0;	
+}
+
+span {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+span p {
+	font-size: 0.563rem;
+	line-height: 0.75rem;
+	color: #102463;
+
+}
+
+
+/* PDF- FOOTER STYLES ============= */
+

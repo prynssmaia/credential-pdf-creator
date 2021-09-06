@@ -10,6 +10,7 @@ const dados = []
 const views = path.join(__dirname, '/views/')
 
 app.get('/', (req, res) => res.render(views + 'index', { dados }))
+app.get('/teste', (req, res) => res.render(views + 'layout', { dados }))
 app.get('/download', (req, res) => {
     res.type('pdf')
     res.download('./credentials.pdf')
