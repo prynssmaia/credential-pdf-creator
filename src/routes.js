@@ -25,7 +25,7 @@ app.post('/pdf', (req, res) => {
     dados.push(infos)
 
 
-    ejs.renderFile(path.join(__dirname, 'views', 'layout.ejs'), { infos }, (err, dados) => {
+    ejs.renderFile(path.join(__dirname, 'views', 'layout.ejs'), { dados }, (err, dados) => {
         if(err) {
             console.log(err)
         } else {
